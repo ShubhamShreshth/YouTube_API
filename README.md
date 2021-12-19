@@ -1,10 +1,10 @@
 # YouTube_API
 This Project is developed in Django Python.
 
-#Project Goal - 
+# Project Goal - 
 To make an API to fetch latest videos sorted in reverse chronological order of their publishing date-time from YouTube for a given tag/search query in a paginated response.
 
-#What this Project basically does is - 
+# What this Project basically does is - 
 ```buildoutvfg
 1. Uses YouTube API to fetch list of videos of certain search keyword
 2. Stores it in dictionary
@@ -21,7 +21,7 @@ To make an API to fetch latest videos sorted in reverse chronological order of t
 - Added support for supplying multiple API keys so that if quota is exhausted on one, it automatically uses the next available key.
 ```
 
-#Key Files Used - 
+# Key Files Used - 
 ```buildoutvfg
 mysite/yt/views.py
 mysite/yt/templates/yt/home.html
