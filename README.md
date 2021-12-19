@@ -11,6 +11,10 @@ To make an API to fetch latest videos sorted in reverse chronological order of t
 3. Displays that dictionary in web page in paginated response
 ```
 
+# Result - 
+After running this django project in your local system the final paginated response will look like this - 
+![alt text](https://github.com/ShubhamShreshth/YouTube_API/blob/Screenshot (73).png?raw=true)
+
 # Functionality Covered -
 ```buildoutcfg
 - Server call the YouTube API continuously in background with some interval (here - 20)
