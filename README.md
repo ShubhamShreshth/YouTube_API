@@ -55,8 +55,9 @@ python manage.py runserver
 ```buildoutcfg
 https://www.googleapis.com/youtube/v3/search?part=snippet&q=football&maxResults=1&type=video&eventType=completed&order=date&key=AIzaSyB9QNacHSAQ4deQp4RjVf3gXZOKXtMCwJk
 ```
-NOTE - Here in above API maxResults is set is 1
-GET Request will return data in following json with datetime order:
+NOTE - Here in above API maxResults is set is to 1
+### The API is query capable and paginated.
+### GET Request will return data in following json with datetime order:
  ```buildoutcfg
 {
     "kind": "youtube#searchListResponse",
@@ -105,4 +106,3 @@ GET Request will return data in following json with datetime order:
     ]
 }
 ```
-### The API is query capable and paginated.
