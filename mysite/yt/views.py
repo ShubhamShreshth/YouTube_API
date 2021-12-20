@@ -16,6 +16,7 @@ class YTData:
         self.next_page_token = None  # token for next page as YouTube API key only provides maximum 0f 50 data in single page and provide key for next page for further data
         self.data = dict()  # dictionary for storing relevent fields from API key (here video title, description, publishtime, image url is extracted)
         self.data['Video List'] = []
+        self.count = 1
 
     # creating function for page 1 to get the required fields
     def get_channel_stats_page1(self):
@@ -38,6 +39,7 @@ class YTData:
                 self.data['Video List'].append(
                     {"index": self.count, "title": video_title, "description": descrip, "publishtime": publishTime,
                      "image": image})
+                self.count += 1
 
         except:
             data = None
@@ -63,6 +65,7 @@ class YTData:
                 self.data['Video List'].append(
                     {"index": self.count, "title": video_title, "description": descrip, "publishtime": publishTime,
                      "image": image})
+                self.count += 1
 
         except:
             data = None
