@@ -86,6 +86,7 @@ def display_string(request):
     # specific query (here used is "Football")
     query = "Football"
     # Code to check whether a key is exhausted or not
+    current_api=""
     for i in range(len(API_Key)):
         if i == len(API_Key):
             # checking and printing in console if all API keys are used
@@ -103,7 +104,8 @@ def display_string(request):
         else:
             # printing in console the number of API key that is being used or are used previous to this
             print("API Key", i + 1, "is used!")
-            current_api = API_Key[i]
+            api = API_Key[i]
+            current_api=api
     # Calling class for API Data
     yt = YTData(current_api, query)
     yt.get_channel_stats_page1()
