@@ -17,7 +17,7 @@ After running this django project in your local system the final paginated respo
 
 # Functionality Covered -
 ```buildoutcfg
-- Server call the YouTube API continuously in background with some interval (here - 20)
+- Server call the YouTube API continuously in background with some interval (here - 20 seconds)
 - Fetch the latest videos for a predefined search query (here - "Football")
 - Stores the data of videosin a database with proper indexes (here - Index starts with 1)
 - A GET API which returns the stored video data in a paginated response sorted in descending order of published datetime.
