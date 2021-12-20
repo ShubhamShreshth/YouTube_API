@@ -35,10 +35,11 @@ class YTData:
                 descrip = data['items'][i]['snippet']['description']
                 publishTime = data['items'][i]['snippet']['publishedAt']
                 image = data['items'][i]['snippet']['thumbnails']['high']['url']
+                channel = data['items'][i]['snippet']['channelTitle']
                 # storing data into dictionary
                 self.data['Video List'].append(
                     {"index": self.count, "title": video_title, "description": descrip, "publishtime": publishTime,
-                     "image": image})
+                     "image": image, "channel":channel})
                 self.count += 1
 
         except:
@@ -61,10 +62,11 @@ class YTData:
                 descrip = data['items'][i]['snippet']['description']
                 publishTime = data['items'][i]['snippet']['publishedAt']
                 image = data['items'][i]['snippet']['thumbnails']['high']['url']
+                channel = data['items'][i]['snippet']['channelTitle']
                 # storing data into dictionary
                 self.data['Video List'].append(
                     {"index": self.count, "title": video_title, "description": descrip, "publishtime": publishTime,
-                     "image": image})
+                     "image": image, "channel":channel})
                 self.count += 1
 
         except:
@@ -75,7 +77,7 @@ class YTData:
         return self.data
 
 
-# function for calling class YTdata which will call API to get data 
+# function for calling class YTdata which will call API to get data
 def display_string(request):
     # List of API keys that can be used
     API_Key = ["AIzaSyB9QNacHSAQ4deQp4RjVf3gXZOKXtMCwJk", "AIzaSyDK-WNR6d2LayUqiemCKOcMYPlDV6jvTh0",
