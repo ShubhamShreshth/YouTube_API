@@ -34,20 +34,7 @@ mysite/yt/templates/yt/home.html
 
 # Instructions to start django server on localhost - 
 
-1- Install required packages
-```buildoutcfg
-pip install -r requirements.txt
-```
-2- Makemigrations, migrate
-```buildoutcfg
-python manage.py makemigrations
-python manage.py migrate
-```
-3- Createsuperuser
-```
-python manage.py createsuperuser
-```
-4- Runserver
+Runserver
 ```buildoutcfg
 cd mysite
 python manage.py runserver
