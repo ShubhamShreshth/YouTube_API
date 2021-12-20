@@ -39,6 +39,7 @@ Runserver
 cd mysite
 python manage.py runserver
 ```
+Do this in your terminal to run the program in your web browser
 
 # API -
 ```buildoutcfg
