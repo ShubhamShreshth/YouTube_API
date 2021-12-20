@@ -14,7 +14,7 @@ To make an API to fetch latest videos sorted in reverse chronological order of t
 # Result - 
 After running this django project in your local system the final paginated response will look like this - 
 
-![alt text](https://github.com/ShubhamShreshth/YouTube_API/blob/master/result.png?raw=true)
+![alt text](https://github.com/ShubhamShreshth/YouTube_API/blob/master/final.png?raw=true)
 
 # Functionality Covered -
 ```buildoutcfg
