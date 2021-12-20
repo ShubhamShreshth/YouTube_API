@@ -32,26 +32,23 @@ mysite/yt/templates/yt/home.html
 ```
 
 # Instructions to start django server on localhost - 
-1- Create virtualenv: 
-```buildoutcfg
-cd src
-virtualenv venv
-```
-2- Install required packages
+
+1- Install required packages
 ```buildoutcfg
 pip install -r requirements.txt
 ```
-3- Makemigrations, migrate
+2- Makemigrations, migrate
 ```buildoutcfg
 python manage.py makemigrations
 python manage.py migrate
 ```
-4- Createsuperuser
+3- Createsuperuser
 ```
 python manage.py createsuperuser
 ```
-5- Runserver
+4- Runserver
 ```buildoutcfg
+cd mysite
 python manage.py runserver
 ```
 
