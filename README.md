@@ -22,7 +22,7 @@ After running this django project in your local system the final paginated respo
 - Fetch the latest videos for a predefined search query (here - "Football")
 - Stores the data of videosin a database with proper indexes (here - Index starts with 1)
 - A GET API which returns the stored video data in a paginated response sorted in descending order of published datetime.
-- It should be scalable and optimised.
+- Scalable and optimised.
 - Added support for supplying multiple API keys so that if quota is exhausted on one, it automatically uses the next available key.
 ```
 
