@@ -32,14 +32,17 @@ mysite/yt/views.py
 mysite/yt/templates/yt/home.html
 ```
 
-# Instructions to start django server on localhost - 
+# Instructions to start Django Server on Localhost - 
 
-Runserver
+1. Download ZIP file of this repo and extract it in local system.
+2. Open the extracted file in Pyhton IDE.
+3. Then in your terminal direct to the folder which has this project.
+4. Then type the below commands in your terminal for the web server to start.
 ```buildoutcfg
 cd mysite
 python manage.py runserver
 ```
-Do this in your terminal to run the program in your web browser
+5. Do this in your terminal to run the program in your web browser
 
 # API -
 ```buildoutcfg
