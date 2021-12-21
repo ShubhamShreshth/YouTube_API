@@ -31,6 +31,8 @@ After running this django project in your local system the final paginated respo
 mysite/yt/views.py
 mysite/yt/templates/yt/home.html
 ```
+- "views.py" contains the code for the API usage and data extraction.
+- "home.html" contains the code for the UI of the web page in which the final paginated response from API will be displayed.
 
 # Instructions to start Django Server on Localhost - 
 
@@ -48,9 +50,18 @@ python manage.py runserver
 ```buildoutcfg
 https://www.googleapis.com/youtube/v3/search?part=snippet&q=football&maxResults=1&type=video&eventType=completed&order=date&key=AIzaSyB9QNacHSAQ4deQp4RjVf3gXZOKXtMCwJk
 ```
-NOTE - Here in above API maxResults is set is to 1
-### The API is query capable and paginated.
-### GET Request will return data in following json with datetime order:
+### NOTE - Here in above API maxResults is set is to 1
+## API keys used in this project -
+```buildoutcfg
+AIzaSyB9QNacHSAQ4deQp4RjVf3gXZOKXtMCwJk
+AIzaSyDK-WNR6d2LayUqiemCKOcMYPlDV6jvTh0
+AIzaSyCmLgeX3GtUgfn7ZjkkWHfOWCMb1MkDEpU
+AIzaSyAip91VlvxNxaw7Fd1mF1s0lUtegg5WtPU
+AIzaSyDAYksLzTBkPf9TQC6th2c9iBSXZ6-Dl8I
+AIzaSyDa1vWMOyRYGq4Qv4Lg_AelhTAiHw4E7OQ
+```
+### - To test the API key use above URL and change the key value to any of the above mentioned keys.
+### - GET Request will return data in following json with datetime order:
  ```buildoutcfg
 {
   "kind": "youtube#searchListResponse",
