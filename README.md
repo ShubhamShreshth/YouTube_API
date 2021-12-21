@@ -44,7 +44,8 @@ mysite/yt/templates/yt/home.html
 cd mysite
 python manage.py runserver
 ```
-5. Do this in your terminal to run the program in your web browser
+5. Do this in your terminal to run the program in your web browser.
+6. You will get a link of your web page open that link to see the final paginated response.
 
 # API -
 ```buildoutcfg
